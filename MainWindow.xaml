@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Background="Coral" 
+        Title="MainWindow" Height="304.5" Width="477.5">
+    <Grid Margin="0,0,-7,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="380*"/>
+            <ColumnDefinition Width="241*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Logowanie" Background="Yellow"  Content="Logowanie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="160,130,0,0" RenderTransformOrigin="1.36,3.95" Height="54" Click="Logowanie_Click"/>
+        <TextBox x:Name="userName" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" Text="wprowadz nazwe" VerticalAlignment="Top" Width="153" Margin="27,42,0,0" TextChanged="userName_TextChanged" GotFocus="TextBox_GotFocus" TextAlignment="Center"/>
+        <TextBox x:Name="pasword" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" Text="wprowadz haslo" VerticalAlignment="Top" Width="178" Margin="239,42,0,0" TextChanged="pasword_TextChanged" GotFocus="TextBox_GotFocus" TextAlignment="Center" RenderTransformOrigin="-0.329,-0.155" Grid.ColumnSpan="2"/>
+        <Button x:Name="Zamknij" Content="Zamknij" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="342,206,0,0" Click="Zamknij_Click" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Name="tabela" x:Class="WpfApp2.okno2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Background="#7FAC0000" 
+        Title="okno2" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Wyswietl_baze" Content="Odswiez baze" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="28,40,0,0" Click="Wyswietl_baze_Click" Height="30"/>
+        <DataGrid x:Name="tabela1" AutoGenerateColumns="True" HorizontalAlignment="Left" Height="219" VerticalAlignment="Top" Width="460" Margin="239,173,0,0"/>
+        <Button x:Name="dodaj" Content="dodaj do bazy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="28,91,0,0" Height="32" Click="dodaj_Click"/>
+        <Button x:Name="usun" Content="usun" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="28,140,0,0" Height="28" Click="usun_Click"/>
+        <TextBox x:Name="idSet" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="wprowadz id" VerticalAlignment="Top" Width="86" Margin="239,130,0,0" TextAlignment="Center" GotFocus="idSet_GotFocus" TextChanged="idSet_TextChanged"/>
+        <TextBox x:Name="imie" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="imie" VerticalAlignment="Top" Width="86" Margin="352,130,0,0" RenderTransformOrigin="0.756,0.552" TextAlignment="Center" GotFocus="imie_GotFocus" TextChanged="imie_TextChanged"/>
+        <TextBox x:Name="nazwisko" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="nazwisko" VerticalAlignment="Top" Width="89" Margin="468,130,0,0" TextAlignment="Center" GotFocus="nazwisko_GotFocus" TextChanged="nazwisko_TextChanged"/>
+        <TextBox x:Name="pensja" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="pensja" VerticalAlignment="Top" Width="110" Margin="589,130,0,0" TextAlignment="Center" GotFocus="pensja_GotFocus" TextChanged="pensja_TextChanged"/>
+        <TextBox x:Name="usun1" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" Text="wprowadz uzytkownika do usuniecia" VerticalAlignment="Top" Width="111" Margin="28,173,0,0" TextChanged="usun1_TextChanged" TextAlignment="Center" GotFocus="usun1_GotFocus" MouseDoubleClick="usun1_MouseDoubleClick"/>
+        <Button x:Name="wyszukaj" Content="Wyszukaj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="59,237,0,0" Height="29" Click="wyszukaj_Click"/>
+        <TextBox x:Name="wyszukajInput" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="Wpisz imie osoby" VerticalAlignment="Top" Width="89" Margin="10,271,0,0" GotFocus="wyszukajInput_GotFocus" TextAlignment="Center" TextChanged="wyszukajInput_TextChanged" />
+        <TextBox x:Name="wyszukaj2Input" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="Wpisz nazwisko osoby" VerticalAlignment="Top" Width="92" Margin="128,271,0,0" TextChanged="wyszukaj2Input_TextChanged" GotFocus="wyszukaj2Input_GotFocus" TextAlignment="Center"/>
+        <Button x:Name="zamknij" Content="zamknij" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="24,389,0,0" Click="Button_Click"/>
+    </Grid>
+</Window>
